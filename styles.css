@@ -213,13 +213,13 @@ h4 {
     width: 250px;
 }
 
+.container.five > .info-header > .contents {
+    gap: 450px;
+}
+
 .container.five > .info-header > .contents > .info > img {
     width: 550px;
 
-}
-
-.container.five > .info-header > .contents {
-    gap: 450px;
 }
 
 .text.quote {
