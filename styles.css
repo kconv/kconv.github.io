@@ -246,6 +246,13 @@ h4 {
 	align-items: center;
 }
 
+.banner-txt	{
+    color: #E5E7EB;
+    margin-left: 120px;
+  margin-right: 20px;
+    padding-left: 0;
+}
+
 .banner {
 	display: flex;
 	width: 70%;
@@ -256,12 +263,6 @@ h4 {
 	align-items: center;
 }
 
-.banner-txt	{
-	color: #E5E7EB;
-	margin-left: 120px;
-  margin-right: 20px;
-	padding-left: 0;
-}
 
 .banner-txt.label {
 	margin: 0;
