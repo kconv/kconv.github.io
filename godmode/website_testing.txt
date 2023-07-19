@@ -1,0 +1,1 @@
+Test the UNF hockey team website for functionality, usability, and compatibility with different devices and browsers. Use automated testing tools or manually test the website by using different devices and browsers.

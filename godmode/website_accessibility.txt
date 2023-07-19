@@ -1,0 +1,1 @@
+Ensure that the UNF hockey team website is accessible to all users, including those with disabilities. Use accessibility testing tools to identify and fix any accessibility issues on the website.

@@ -1,0 +1,81 @@
+/* Global styles */
+:root {
+  --primary-color: #0a233f;
+  --secondary-color: #a7a8a9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-family: 'Overpass', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Header Styles */
+.page-header {
+  align-items: center;
+  background-color: #0a233f;
+  background-image: url(../images/osprey.png);
+  background-position: 95% 40%;
+  background-repeat: no-repeat;
+  background-size: 60rem;
+  color: white;
+  display: flex;
+  height: 12rem;
+  justify-content: space-between;
+  padding: 0 10rem;
+  text-align: center;
+}
+
+.page-title {
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+}
+
+.page-title img {
+  width: 12rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Bank Gothic', bold;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.socials img {
+  width: 3rem;
+}
+
+/* Main Content Styles */
+/* ... */
+
+/* Footer Styles */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+}
