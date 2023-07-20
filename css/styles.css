@@ -1,135 +1,203 @@
 /* Global styles */
 :root {
+
+/*Miscellaneous*/
     --primary-color: #0a233f;
     --secondary-color: #a7a8a9;
+    --tertiary-color: #00b2e2;
 }
 
 * {
-    box-sizing: border-box;
+
+/*Box model stuff*/
     margin: 0;
     padding: 0;
+/*Miscellaneous*/
+    box-sizing: border-box;
 }
 
 body {
+
+/*Box model stuff*/
     margin: 0;
     padding: 0;
     background-color: var(--secondary-color);
+/*Typography stuff*/
     font-family: 'Overpass', sans-serif;
 }
 
 img {
+
+/*Box model stuff*/
     width: 100%;
 }
 
 /* Header Styles */
 .page-header {
+
+/*Display stuff*/
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+/*Box model stuff*/
     height: 12rem;
     padding: 0 10rem;
     background-color: #0a233f;
     background-image: url(../images/osprey.png);
-    background-repeat: no-repeat;
     background-position: 95% 40%;
+    background-repeat: no-repeat;
     background-size: 60rem;
-    color: white;
+    border-bottom: #00b2e2 4px solid;
+/*Typography stuff*/
     text-align: center;
+    color: white;
 }
 
 .page-title {
+
+/*Display stuff*/
     display: flex;
     align-items: center;
+/*Miscellaneous*/
     gap: 3rem;
 }
 
 .page-title img {
+
+/*Box model stuff*/
     width: 12rem;
 }
 
 h1 {
+
+/*Box model stuff*/
     margin: 0;
     padding: 0;
-    font-size: 3rem;
+/*Typography stuff*/
     font-family: 'Bank Gothic', bold;
+    font-size: 3rem;
 }
 
 h2 {
+
+/*Box model stuff*/
     margin: 0;
     padding: 0;
+/*Typography stuff*/
     font-size: 1.5rem;
 }
 
 h3 {
+
+/*Box model stuff*/
     margin: 0;
     padding: 0;
+/*Typography stuff*/
     font-size: 1.2rem;
 }
 
 .socials img {
+
+/*Box model stuff*/
     width: 3rem;
 }
 
 main {
+
+/*Box model stuff*/
     min-height: 100vh;
     background-color: #a7a8a9;
 }
 
 .menu-bar {
+
+/*Display stuff*/
     display:  flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+/*Box model stuff*/
+    width: 100%;
     height: 4rem;
-    margin-top: 1rem;
+    /* margin-top: 6px; */
     padding: 10px 8%;
     background-color: var(--primary-color);
 }
 
 .menu-item {
-    color: white;
+
+/*Typography stuff*/
     text-decoration: none;
+    color: white;
 }
+
+.menu-item:hover {
+/*Typography stuff*/
+    color: var(--tertiary-color);
+}
+
 .menu-bar img {
+
+/*Box model stuff*/
     width: 8rem;
-    margin: 0 10px;
+/*Miscellaneous*/
     cursor: pointer;
 }
 
 .dropdown {
+
+/*Display stuff*/
     display: inline-block;
+/*Positioning stuff*/
     position: relative;
 }
 
 .dropdown-toggle {
+
+/*Positioning stuff*/
     position: relative;
-    color: white;
+/*Typography stuff*/
     text-decoration: none;
+    color: white;
 }
 
 .dropdown-content {
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+/*Display stuff*/
     display: none;
+/*Positioning stuff*/
     position: absolute;
     z-index: 1;
-    min-width: 160px;
+/*Box model stuff*/
+    padding-top: 1rem;
+    min-width: 100px;
     background-color: var(--primary-color);
+/*Miscellaneous*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown-content a {
+
+/*Display stuff*/
     display: block;
+/*Box model stuff*/
     padding: 12px 16px;
-    color: white;
+/*Typography stuff*/
     text-decoration: none;
+    color: white;
 }
 
 .dropdown:hover .dropdown-content {
+
+/*Display stuff*/
     display: block;
 }
 
 
 .main-content {
+
+/*Display stuff*/
     display: grid;
     grid-template-columns: 4fr 2fr;
+/*Box model stuff*/
     width: 80vw;
     min-height: 100vh;
     margin: 16px 10%;
@@ -139,86 +207,155 @@ main {
 }
 
 .news-and-announcements {
+
+/*Display stuff*/
     display: flex;
     flex-direction: column;
     align-items: start;
+/*Box model stuff*/
     padding: 1rem;
 }
 
 .upcoming-games {
+
+/*Display stuff*/
     display: flex;
     flex-direction: column;
     align-items: start;
+/*Box model stuff*/
     margin: 0 2%;
     padding: 1rem;
 }
 
 .main-content h1 {
+
+/*Box model stuff*/
     width: 100%;
     margin-bottom: 1rem;
     padding: 2rem 0.5rem 0.5rem 0.5rem;
     border-bottom: var(--primary-color) solid 4px;
+/*Typography stuff*/
     font-size: 2rem;
     color: var(--primary-color);
 }
 
 .panel {
+
+/*Display stuff*/
     display: flex;
-    overflow: hidden;
+/*Box model stuff*/
     width: 100%;
     margin-bottom: 1.5rem;
-    border: #a7a8a97c solid 1px;
+    border: #a7a8a98c solid 1px;
     border-radius: 8px;
+/*Miscellaneous*/
+    box-shadow: 0px 0px 15px 1px #a7a8a975;
+    overflow: hidden;
 }
 
 .news-and-announcements .panel {
-    height: 170px;
+
+/*Box model stuff*/
+    height: 200px;
+}
+
+.blurb {
+
+/*Display stuff*/
+    display: -webkit-box;
+/*Miscellaneous*/
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .panel .image-container {
+
+/*Display stuff*/
     flex: 0 0 auto;
-    width: 200px;
-    height: 170px;
+/*Box model stuff*/
+    width: 225px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.andrew-sliding {
+
+/*Box model stuff*/
+    background-image: url(../images/team/andrew-sliding.jpg);
+}
+
+.owen-skating {
+
+/*Box model stuff*/
+    background-image: url(../images/team/owen-skating.jpg);
+}
+
+.bobby-just-being-a-beaut {
+
+/*Box model stuff*/
+    background-image: url(../images/team/bobby-just-being-a-beaut.jpg);
+}
+
+.osprey-dark {
+    background-image: url(../images/osprey-dark.png);
 }
 
 .panel .image-container img {
+
+/*Box model stuff*/
     max-width: 100%;
     height: 170px;
     border-radius: 6px 0 0 6px;
 }
 
 .panel .panel-content {
+
+/*Display stuff*/
     flex: 1;
-    padding: 1rem;
+/*Box model stuff*/
+    padding: 2rem;
+/*Typography stuff*/
     color: var(--primary-color);
 }
 
-
 .headline {
-    padding: 0 0 1rem 0;
+
+/*Box model stuff*/
+    width: 100%;
+    padding-bottom: 0.5rem;
+/*Typography stuff*/
+    text-overflow: ellipsis;
+/*Miscellaneous*/
+    overflow: hidden;
 }
 
 .panel-content p, li, a {
+
+/*Typography stuff*/
     color: #0a233f93;
 }
 
 .panel-content li {
+
+/*Box model stuff*/
     padding: 0.5rem;
+/*Miscellaneous*/
     list-style: none;
 }
 
 footer {
+
+/*Box model stuff*/
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 10rem;
     padding: 20px;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    /*Typography stuff*/
     text-align: center;
+    color: var(--tertiary-color)
 }
 
-.preorder {
-    position: absolute;
-    top: 30.7rem;
-    left: 19.7rem;
-    width: 2px;
-    height: 2px;
-    background-color: white;
-}
